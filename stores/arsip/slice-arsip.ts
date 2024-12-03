@@ -32,7 +32,9 @@ const notesSlice = createSlice({
       state.querySearch = action.payload.query;
       const query: string | null = action.payload.query;
       if (query) {
-        state.filterArsips = state.arsips.filter((note) => note.titleNote.includes(query) || note.bodyNote.includes(query));
+        state.filterArsips = state.arsips.filter(
+          (note) => note.titleNote.toLocaleLowerCase().includes(query.toLocaleLowerCase()) || note.bodyNote.toLocaleLowerCase().includes(query.toLocaleLowerCase()),
+        );
       }
     },
   },

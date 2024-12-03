@@ -31,7 +31,9 @@ const notesSlice = createSlice({
       const query: string | null = action.payload.query;
       state.querySearch = query;
       if (query) {
-        state.filterNotes = state.notes.filter((note) => note.titleNote.includes(query) || note.bodyNote.includes(query));
+        state.filterNotes = state.notes.filter(
+          (note) => note.titleNote.toLowerCase().includes(query.toLocaleLowerCase()) || note.bodyNote.toLowerCase().includes(query.toLocaleLowerCase()),
+        );
       }
     },
   },
