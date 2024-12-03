@@ -1,4 +1,4 @@
-import { Box, HStack, Input, Text } from "@chakra-ui/react";
+import { Box, HStack, Text } from "@chakra-ui/react";
 import Search from "./../../Search";
 
 export default function Navbar(): React.ReactNode {
