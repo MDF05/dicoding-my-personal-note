@@ -4,7 +4,7 @@ import { NoteTypes } from "../../types/note-types";
 import { addArsip } from "../../../stores/arsip/slice-arsip";
 import { deleteNote } from "../../../stores/notes/slice-notes";
 
-export default function ButtonAddArsip({ newNote }: { newNote: NoteTypes }): React.ReactNode {
+export default function ButtonAddArsip({ newNote }: { newNote: NoteTypes }) {
   const dispatch = useAppDispatch();
   function onArsipNote() {
     const confirmArsip = confirm("apakah kamu yakin ingin pindahkan ke catatan aktif");

@@ -1,5 +1,5 @@
 import { Box, HStack, Text } from "@chakra-ui/react";
-import Search from "./../../Search";
+import Search from "./Search";
 
 export default function Navbar(): React.ReactNode {
   return (

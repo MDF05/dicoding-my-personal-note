@@ -1,12 +1,12 @@
 import { Box, Input } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Button } from "./components/ui/button";
-import { searchSchema, SearchSchema } from "./schemas/search-shema";
+import { Button } from "../ui/button";
+import { searchSchema, SearchSchema } from "../../schemas/search-shema";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useAppDispatch } from "../stores/stores";
-import { filterNotes } from "../stores/notes/slice-notes";
-import { filterArsip } from "../stores/arsip/slice-arsip";
+import { useAppDispatch } from "../../../stores/stores";
+import { filterNotes } from "../../../stores/notes/slice-notes";
+import { filterArsip } from "../../../stores/arsip/slice-arsip";
 
 export default function Search(): React.ReactNode {
   const { register, handleSubmit, watch } = useForm<SearchSchema>({ resolver: zodResolver(searchSchema) });
