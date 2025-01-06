@@ -9,7 +9,7 @@ export default function Navbar(): React.ReactNode {
           Notes
         </Text>
       </Box>
-      <Box width={"30%"}>
+      <Box width={{ base: "70%", md: "40%", lg: "30%" }}>
         <Search></Search>
       </Box>
     </HStack>

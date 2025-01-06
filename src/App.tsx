@@ -14,7 +14,7 @@ function App() {
     <HStack display={"flex"} flexDirection={"column"} width={"100%"} bg={"backgroundBase"} height={"100vh"} overflowY={"auto"} alignItems={"center"}>
       <Navbar></Navbar>
       {!state?.querySearch && (
-        <VStack width={"40%"}>
+        <VStack width={{ base: "90%", md: "80%", lg: "40%" }}>
           <HeadingNotes text="Buat Catatan" />
           <FormAddNotes></FormAddNotes>
         </VStack>
