@@ -4,35 +4,42 @@ export const system = createSystem(defaultConfig, {
   theme: {
     tokens: {
       fonts: {
-        heading: { value: `'Figtree', sans-serif` },
+        heading: { value: `'Orbitron', sans-serif` },
         body: { value: `'Figtree', sans-serif` },
       },
       colors: {
         backgroundBase: {
-          value: "rgb(32, 33, 36)",
+          value: "#f0f4f8", // Light silver/blueish white
         },
         fontWhite: {
-          value: "white",
+          value: "#1a202c", // Dark text for light mode
         },
         fontPasif: {
-          value: "rgb(153, 153, 153)",
+          value: "#718096", // Cool gray
         },
         delete: {
           active: {
-            value: "rgb(176, 0, 32)",
+            value: "#e53e3e",
           },
           pasif: {
-            value: "#f44336",
+            value: "#feb2b2",
           },
         },
         arsip: {
           active: {
-            value: "rgb(196, 144, 0)",
+            value: "#d69e2e",
           },
           pasif: {
-            value: "#ffeb3b",
+            value: "#fbd38d",
           },
         },
+        // New futuristic accents
+        accent: {
+          cyan: { value: "#00f2ff" },
+          purple: { value: "#bc13fe" },
+          glass: { value: "rgba(255, 255, 255, 0.4)" }, // Glassmorphism base
+          glassBorder: { value: "rgba(255, 255, 255, 0.6)" },
+        }
       },
     },
   },

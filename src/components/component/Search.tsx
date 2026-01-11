@@ -27,7 +27,7 @@ export default function Search(): React.ReactNode {
 
   return (
     <Box as={"form"} onSubmit={handleSubmit((event) => onSearch(event))}>
-      <Input placeholder="Cari catatan ..." width={"100%"} color={"white"} fontWeight={"bold"} _focusWithin={{ borderColor: "white" }} {...register("query")}></Input>
+      <Input placeholder="Cari catatan ..." width={"100%"} color={"black"} fontWeight={"bold"} _focusWithin={{ borderColor: "white" }} {...register("query")}></Input>
       <Button type={"submit"} hidden></Button>
     </Box>
   );
